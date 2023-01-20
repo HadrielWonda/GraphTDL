@@ -1,0 +1,18 @@
+type Query{
+    books: [BooksRepository!]!
+}
+
+
+type Book {
+    id: UUID!
+    title: String!
+    author: Author!
+}
+
+type Author{
+    id: UUID!
+    name: String!
+}
+
+
+scalar UUID

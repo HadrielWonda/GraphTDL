@@ -7,5 +7,6 @@ namespace GraphTDL.Api;
 
     public class Query
     {
-        public string Hello() => "World";
+        public Task<List<BooksRepository>> GetBooks([Service] Repositories repositories) =>
+             repository.GetBooksAsync();
     }
